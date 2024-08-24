@@ -32,8 +32,8 @@ public class Profesor extends Empleado {
 		this.antiguedadDocente = antiguedadDocente;
 	}
 
-	public Profesor(String cargo, int antiguedadDocente) {
-		super();
+	public Profesor(String nombre,int edad, String cargo, int antiguedadDocente) {
+		super(nombre, edad);
 		this.cargo = cargo;
 		this.antiguedadDocente = antiguedadDocente;
 	}
