@@ -27,6 +27,17 @@ public class mainEjercicio1_b {
 			Profesor p = (Profesor) it.next();
 			System.out.println(p.toString());
 		}
-	}
+		
+		
+		Profesor p6 = new Profesor("Zack",  18, "Ayudante", 4);
+		
+		if(p3.equals(p6)) 
+		{
+			System.out.println("Son iguales");
+		}
 
+	}
+		
+		
 }
+
