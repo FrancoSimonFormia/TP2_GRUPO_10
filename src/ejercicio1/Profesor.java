@@ -1,6 +1,6 @@
 package ejercicio1;
 
-public class Profesor extends Empleado {
+public class Profesor extends Empleado implements Comparable<Profesor> {
 
 	//atributos
 	private String cargo;
@@ -17,11 +17,11 @@ public class Profesor extends Empleado {
 
 	@Override
 	public String toString() {
-	    return "Profesor Id =" + getId()
-	            + ", Nombre =" + getNombre()
-	            + ", Edad =" + getEdad()
-	            + ", Cargo " + cargo
-	            + ", AntiguedadDocente=" + antiguedadDocente + "]";
+	    return "Profesor Id: " + getId()
+	            + ", Nombre: " + getNombre()
+	            + ", Edad: " + getEdad()
+	            + ", Cargo: " + cargo
+	            + ", AntiguedadDocente: " + antiguedadDocente;
 	}
 
 	public int getAntiguedadDocente() {
@@ -41,5 +41,21 @@ public class Profesor extends Empleado {
 	public Profesor() {
 		super();	
 	}
+
+	@Override
+	public int compareTo(Profesor objP) {
+		
+		//Ordeno por antiguedad
+				if(objP.antiguedadDocente == this.antiguedadDocente)
+					return 0;
+				
+				if (objP.antiguedadDocente < this.antiguedadDocente)
+				{
+					return -1;
+				}		
+				return 1;
+	}
+	
+	
 }
 	

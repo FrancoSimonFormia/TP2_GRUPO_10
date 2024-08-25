@@ -15,9 +15,12 @@ public class mainEjercicio1_a {
 		profesores.add(new Profesor("Andrew", 37, "Jefe TP", 3));
 		profesores.add(new Profesor("Michael", 42, "Jefe de cátedra", 10));
 		
-		ListIterator it = profesores.listIterator();
-		
-		
+		ListIterator<Profesor> it = profesores.listIterator();
+		while (it.hasNext()) {
+			Profesor profesor = it.next();
+			it.remove();
+			System.out.println(profesor.toString());
+		}
 
 	}
 
