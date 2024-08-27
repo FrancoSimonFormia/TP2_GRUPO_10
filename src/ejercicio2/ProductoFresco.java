@@ -37,7 +37,15 @@ public class ProductoFresco extends Producto {
 		this.pais_de_Origen = pais_de_origen;
 	}
 	
-	
+	@Override
+	public String toString() {
+	    return "ProductoFresco{" +
+	            "fecha_envasado=" + fecha_envasado +
+	            ", pais_de_Origen='" + pais_de_Origen + '\'' +
+	            ", fecha_de_caducidad=" + getFechaDeCaducidad() +
+	            ", numero_de_lote=" + getNumeroDeLote() +
+	            '}';
+	}
 	
 	
 	

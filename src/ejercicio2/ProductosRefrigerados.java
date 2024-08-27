@@ -25,6 +25,13 @@ public class ProductosRefrigerados extends Producto {
 		this.codigo_supervision_alimentaria = codigo_supervision_alimentaria;
 	}
 	
-	
+	@Override
+	public String toString() {
+	    return "ProductosRefrigerados{" +
+	            "codigo_supervision_alimentaria='" + codigo_supervision_alimentaria + '\'' +
+	            ", fecha_de_caducidad=" + getFechaDeCaducidad() +
+	            ", numero_de_lote=" + getNumeroDeLote() +
+	            '}';
+	}
 
 }
