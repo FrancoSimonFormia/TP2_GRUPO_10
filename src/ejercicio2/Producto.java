@@ -2,7 +2,7 @@ package ejercicio2;
 
 import java.sql.Date;
 
-public class Producto {
+public abstract class Producto {
 	
 	//fecha de caducidad y número de lote
 	
