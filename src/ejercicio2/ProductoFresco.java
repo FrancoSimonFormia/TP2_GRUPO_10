@@ -33,7 +33,7 @@ public class ProductoFresco extends Producto {
 	public ProductoFresco(Date fecha_de_caducidad, int numero_de_lote, 
 			Date fecha_de_envasado, String pais_de_origen) {
 		super(fecha_de_caducidad, numero_de_lote);
-		this.fecha_de_caducidad = fecha_de_caducidad;
+		this.fecha_envasado = fecha_de_caducidad;
 		this.pais_de_Origen = pais_de_origen;
 	}
 	
