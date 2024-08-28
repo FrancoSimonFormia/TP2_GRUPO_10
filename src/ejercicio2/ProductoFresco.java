@@ -6,8 +6,8 @@ public class ProductoFresco extends Producto {
 
 	//Informacion especifica 
 	
-	Date fecha_envasado;
-	String pais_de_Origen;
+	private Date fecha_envasado;
+	private String pais_de_Origen;
 	
 	
 	public Date getFecha_envasado() {

@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class ProductosRefrigerados extends Producto {
 	
-	String codigo_supervision_alimentaria;
+	private String codigo_supervision_alimentaria;
 
 	public String getCodigo_supervision_alimentaria() {
 		return codigo_supervision_alimentaria;

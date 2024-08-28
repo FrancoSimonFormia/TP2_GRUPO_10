@@ -2,7 +2,7 @@ package ejercicio2;
 import java.sql.Date;
 public class ProductosCongelados extends Producto {
 
-	double temperatura_recomendada;
+	private double temperatura_recomendada;
 	
 	public double getTemperaturaRecomendada() {
 		return temperatura_recomendada;

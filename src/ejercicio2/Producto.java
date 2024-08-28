@@ -6,8 +6,8 @@ public abstract class Producto {
 	
 	//fecha de caducidad y número de lote
 	
-	Date fecha_de_caducidad; 
-	int numero_de_lote;
+	private Date fecha_de_caducidad; 
+	private int numero_de_lote;
 	
 	//get y sett.
 	
