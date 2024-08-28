@@ -26,8 +26,8 @@ public class ProductosCongelados extends Producto {
 	public String toString() {
 	    return "ProductosCongelados{" +
 	            "temperatura_recomendada=" + temperatura_recomendada +
-	            ", fecha_de_caducidad=" + getFechaDeCaducidad() +
-	            ", numero_de_lote=" + getNumeroDeLote() +
+	            ", fecha_de_caducidad=" + getFecha_de_caducidad() +
+	            ", numero_de_lote=" + getNumero_de_lote() +
 	            '}';
 	}
 	

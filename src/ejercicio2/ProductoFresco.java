@@ -42,8 +42,8 @@ public class ProductoFresco extends Producto {
 	    return "ProductoFresco{" +
 	            "fecha_envasado=" + fecha_envasado +
 	            ", pais_de_Origen='" + pais_de_Origen + '\'' +
-	            ", fecha_de_caducidad=" + getFechaDeCaducidad() +
-	            ", numero_de_lote=" + getNumeroDeLote() +
+	            ", fecha_de_caducidad=" + getFecha_de_caducidad() +
+	            ", numero_de_lote=" + getNumero_de_lote() +
 	            '}';
 	}
 	

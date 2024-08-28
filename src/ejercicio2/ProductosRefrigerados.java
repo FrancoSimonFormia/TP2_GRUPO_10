@@ -29,8 +29,8 @@ public class ProductosRefrigerados extends Producto {
 	public String toString() {
 	    return "ProductosRefrigerados{" +
 	            "codigo_supervision_alimentaria='" + codigo_supervision_alimentaria + '\'' +
-	            ", fecha_de_caducidad=" + getFechaDeCaducidad() +
-	            ", numero_de_lote=" + getNumeroDeLote() +
+	            ", fecha_de_caducidad=" + getFecha_de_caducidad() +
+	            ", numero_de_lote=" + getNumero_de_lote() +
 	            '}';
 	}
 
