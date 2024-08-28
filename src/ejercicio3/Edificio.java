@@ -18,7 +18,8 @@ public class Edificio {
 	
 	@Override
 	public String toString() {
-		return "Este edificio tiene un ancho de " + ancho + "m, y un largo de " + largo + "m.";
+		//return "Este edificio tiene un ancho de " + ancho + "m, y un largo de " + largo + "m.";
+		return "Este edificio tiene una superficie de " + getSuperficieEdificio() + "metros cuadrados.";
 	}
 
 	public double getAncho() {
