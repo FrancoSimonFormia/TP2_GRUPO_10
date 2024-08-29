@@ -1,7 +1,9 @@
 package ejercicio3;
 
 public class Edificio {
-
+	
+	
+	
     private double ancho;
     private double largo;
 

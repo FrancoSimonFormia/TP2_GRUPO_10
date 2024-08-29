@@ -1,6 +1,6 @@
 package ejercicio3;
 
-public class Polideportivo extends Edificio implements IInstalacionDeportiva {
+public class Polideportivo extends Edificio implements Iinstalación {
 
 	// FALTA DESARROLLAR
 	private String nombre;
@@ -12,7 +12,7 @@ public class Polideportivo extends Edificio implements IInstalacionDeportiva {
 	
 	public Polideportivo(String nombre, double ancho, double largo) {
 		super(ancho, largo);
-		this.nombre = nombre;
+		this.nombre = nombre;		
 	}
 	
 	public String getNombre() {
@@ -27,16 +27,19 @@ public class Polideportivo extends Edificio implements IInstalacionDeportiva {
 
 	@Override
 	public int getTipoDeInstalacion() {
-		// FALTA DESARROLLAR METODO
-		return 0;
+		return 1;
 	}
 
 	@Override
 	public String toString() {
-		return 
-				"Polideportivo nombre: " + nombre + 
-				"| superficie: " + super.getSuperficieEdificio() + "mts cuadrados";
+		return "Polideportivo [getNombre()=" + getNombre() + ", getTipoDeInstalacion()=" + getTipoDeInstalacion()
+				+ ", getAncho()=" + getAncho() + ", getLargo()=" + getLargo() + ", getSuperficieEdificio()="
+				+ getSuperficieEdificio() + "]";
 	}
+
+	
+
+	
 
 	
 }
