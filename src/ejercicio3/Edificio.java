@@ -2,8 +2,6 @@ package ejercicio3;
 
 public class Edificio {
 	
-	
-	
     private double ancho;
     private double largo;
 
@@ -20,8 +18,8 @@ public class Edificio {
 	
 	@Override
 	public String toString() {
-		//return "Este edificio tiene un ancho de " + ancho + "m, y un largo de " + largo + "m.";
-		return "Este edificio tiene una superficie de " + getSuperficieEdificio() + "metros cuadrados.";
+		return "Este edificio tiene un ancho de " + ancho + "m, un largo de " + largo + 
+				"m, y una superficie de " + getSuperficieEdificio() + " metros cuadrados.";
 	}
 
 	public double getAncho() {

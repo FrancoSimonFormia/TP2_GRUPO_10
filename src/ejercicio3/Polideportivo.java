@@ -2,17 +2,21 @@ package ejercicio3;
 
 public class Polideportivo extends Edificio implements Iinstalación {
 
-	// FALTA DESARROLLAR
 	private String nombre;
+	private String localidad;
 	
 	//constructores
 	public Polideportivo() {
 		super();
+		this.nombre = "Sin nombre";
+		this.localidad = "Desconocida";
+				
 	}
 	
-	public Polideportivo(String nombre, double ancho, double largo) {
+	public Polideportivo(String nombre, String localidad, double ancho, double largo) {
 		super(ancho, largo);
-		this.nombre = nombre;		
+		this.nombre = nombre;
+		this.localidad = localidad;
 	}
 	
 	public String getNombre() {
@@ -24,6 +28,13 @@ public class Polideportivo extends Edificio implements Iinstalación {
 		this.nombre = nombre;
 	}
 
+	public String getLocalidad() {
+		return localidad;
+	}
+
+	public void setLocalidad(String localidad) {
+		this.localidad = localidad;
+	}
 
 	@Override
 	public int getTipoDeInstalacion() {
@@ -32,9 +43,9 @@ public class Polideportivo extends Edificio implements Iinstalación {
 
 	@Override
 	public String toString() {
-		return "Polideportivo [getNombre()=" + getNombre() + ", getTipoDeInstalacion()=" + getTipoDeInstalacion()
-				+ ", getAncho()=" + getAncho() + ", getLargo()=" + getLargo() + ", getSuperficieEdificio()="
-				+ getSuperficieEdificio() + "]";
+		return "Polideportivo " + getNombre() + " - Localidad: " + getLocalidad() + " - Tipo de instalacion: " + getTipoDeInstalacion()
+				+ " - Ancho: " + getAncho() + "m, Largo: " + getLargo() + "m, Superficie: "
+				+ getSuperficieEdificio() + "m2";
 	}
 
 	
