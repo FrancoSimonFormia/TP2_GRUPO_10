@@ -1,8 +1,8 @@
 package ejercicio3;
 import java.util.ArrayList;
-import java.util.ListIterator;
+import java.util.Iterator;
 
-public class Main {
+public class mainEjercicio3 {
     public static void main(String[] args) {
     	
         ArrayList<Edificio> edificios = new ArrayList<>();
@@ -16,8 +16,8 @@ public class Main {
         edificios.add(new Oficinas(40, 55, 10, 3));
         edificios.add(new Oficinas(30, 60, 20, 5));
         
-        // ListIterator y recorrida de coleccion
-        ListIterator<Edificio> it = edificios.listIterator();
+        // Iterator y recorrida de coleccion
+        Iterator<Edificio> it = edificios.listIterator();
         while (it.hasNext()) {
             Edificio edificio = it.next();
             System.out.println(edificio.toString());
